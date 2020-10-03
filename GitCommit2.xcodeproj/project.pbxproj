@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		1502CBF02528CB890093EACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1502CBEE2528CB890093EACE /* Main.storyboard */; };
 		1502CBF22528CB8A0093EACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1502CBF12528CB8A0093EACE /* Assets.xcassets */; };
 		1502CBF52528CB8A0093EACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1502CBF32528CB8A0093EACE /* LaunchScreen.storyboard */; };
+		1502CBFE2528CD060093EACE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1502CBFD2528CD060093EACE /* Podfile */; };
+		1502CC022528D5E90093EACE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC012528D5E90093EACE /* DetailViewController.swift */; };
+		5ECE515AF37E3B9B1E33DEC9 /* Pods_GitCommit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52650259427D85D6460EA961 /* Pods_GitCommit2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		1502CBF12528CB8A0093EACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1502CBF42528CB8A0093EACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1502CBF62528CB8A0093EACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1502CBFD2528CD060093EACE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		1502CC012528D5E90093EACE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		52650259427D85D6460EA961 /* Pods_GitCommit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitCommit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DB801C6840FAA0BDE18D76 /* Pods-GitCommit2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitCommit2.release.xcconfig"; path = "Target Support Files/Pods-GitCommit2/Pods-GitCommit2.release.xcconfig"; sourceTree = "<group>"; };
+		A86011BC94960F0AB6AAFAAD /* Pods-GitCommit2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitCommit2.debug.xcconfig"; path = "Target Support Files/Pods-GitCommit2/Pods-GitCommit2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECE515AF37E3B9B1E33DEC9 /* Pods_GitCommit2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +49,11 @@
 		1502CBDC2528CB890093EACE = {
 			isa = PBXGroup;
 			children = (
+				1502CBFD2528CD060093EACE /* Podfile */,
 				1502CBE72528CB890093EACE /* GitCommit2 */,
 				1502CBE62528CB890093EACE /* Products */,
+				30FC826C5632E13458ED80C1 /* Pods */,
+				D2E4F751B083712B84DDCDCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +75,26 @@
 				1502CBF12528CB8A0093EACE /* Assets.xcassets */,
 				1502CBF32528CB8A0093EACE /* LaunchScreen.storyboard */,
 				1502CBF62528CB8A0093EACE /* Info.plist */,
+				1502CC012528D5E90093EACE /* DetailViewController.swift */,
 			);
 			path = GitCommit2;
+			sourceTree = "<group>";
+		};
+		30FC826C5632E13458ED80C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A86011BC94960F0AB6AAFAAD /* Pods-GitCommit2.debug.xcconfig */,
+				88DB801C6840FAA0BDE18D76 /* Pods-GitCommit2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2E4F751B083712B84DDCDCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52650259427D85D6460EA961 /* Pods_GitCommit2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1502CBF92528CB8A0093EACE /* Build configuration list for PBXNativeTarget "GitCommit2" */;
 			buildPhases = (
+				B61FF729081F10019579CEDB /* [CP] Check Pods Manifest.lock */,
 				1502CBE12528CB890093EACE /* Sources */,
 				1502CBE22528CB890093EACE /* Frameworks */,
 				1502CBE32528CB890093EACE /* Resources */,
+				05EF1CFAF6819CBA09560471 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +158,54 @@
 			files = (
 				1502CBF52528CB8A0093EACE /* LaunchScreen.storyboard in Resources */,
 				1502CBF22528CB8A0093EACE /* Assets.xcassets in Resources */,
+				1502CBFE2528CD060093EACE /* Podfile in Resources */,
 				1502CBF02528CB890093EACE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05EF1CFAF6819CBA09560471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitCommit2/Pods-GitCommit2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitCommit2/Pods-GitCommit2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitCommit2/Pods-GitCommit2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61FF729081F10019579CEDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitCommit2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1502CBE12528CB890093EACE /* Sources */ = {
@@ -140,6 +215,7 @@
 				1502CBED2528CB890093EACE /* ViewController.swift in Sources */,
 				1502CBE92528CB890093EACE /* AppDelegate.swift in Sources */,
 				1502CBEB2528CB890093EACE /* SceneDelegate.swift in Sources */,
+				1502CC022528D5E90093EACE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +359,7 @@
 		};
 		1502CBFA2528CB8A0093EACE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86011BC94960F0AB6AAFAAD /* Pods-GitCommit2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		1502CBFB2528CB8A0093EACE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DB801C6840FAA0BDE18D76 /* Pods-GitCommit2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
