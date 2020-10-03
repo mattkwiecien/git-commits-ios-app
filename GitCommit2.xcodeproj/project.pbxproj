@@ -15,6 +15,7 @@
 		1502CBF52528CB8A0093EACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1502CBF32528CB8A0093EACE /* LaunchScreen.storyboard */; };
 		1502CBFE2528CD060093EACE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1502CBFD2528CD060093EACE /* Podfile */; };
 		1502CC022528D5E90093EACE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC012528D5E90093EACE /* DetailViewController.swift */; };
+		1502CC062528D8650093EACE /* GitCommit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC042528D8650093EACE /* GitCommit.xcdatamodeld */; };
 		5ECE515AF37E3B9B1E33DEC9 /* Pods_GitCommit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52650259427D85D6460EA961 /* Pods_GitCommit2.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1502CBF62528CB8A0093EACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1502CBFD2528CD060093EACE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		1502CC012528D5E90093EACE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1502CC052528D8650093EACE /* GitCommit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitCommit.xcdatamodel; sourceTree = "<group>"; };
 		52650259427D85D6460EA961 /* Pods_GitCommit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitCommit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DB801C6840FAA0BDE18D76 /* Pods-GitCommit2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitCommit2.release.xcconfig"; path = "Target Support Files/Pods-GitCommit2/Pods-GitCommit2.release.xcconfig"; sourceTree = "<group>"; };
 		A86011BC94960F0AB6AAFAAD /* Pods-GitCommit2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitCommit2.debug.xcconfig"; path = "Target Support Files/Pods-GitCommit2/Pods-GitCommit2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				1502CBF32528CB8A0093EACE /* LaunchScreen.storyboard */,
 				1502CBF62528CB8A0093EACE /* Info.plist */,
 				1502CC012528D5E90093EACE /* DetailViewController.swift */,
+				1502CC042528D8650093EACE /* GitCommit.xcdatamodeld */,
 			);
 			path = GitCommit2;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				1502CBE92528CB890093EACE /* AppDelegate.swift in Sources */,
 				1502CBEB2528CB890093EACE /* SceneDelegate.swift in Sources */,
 				1502CC022528D5E90093EACE /* DetailViewController.swift in Sources */,
+				1502CC062528D8650093EACE /* GitCommit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1502CC042528D8650093EACE /* GitCommit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1502CC052528D8650093EACE /* GitCommit.xcdatamodel */,
+			);
+			currentVersion = 1502CC052528D8650093EACE /* GitCommit.xcdatamodel */;
+			path = GitCommit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1502CBDD2528CB890093EACE /* Project object */;
 }
