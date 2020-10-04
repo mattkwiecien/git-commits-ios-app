@@ -1,6 +1,0 @@
-framework module Pods_GitCommit2 {
-  umbrella header "Pods-GitCommit2-umbrella.h"
-
-  export *
-  module * { export * }
-}
