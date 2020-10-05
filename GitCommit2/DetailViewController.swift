@@ -9,12 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var detailItem: Commit?
     @IBOutlet var detailLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let detail = self.detailItem {
+            detailLabel.text = detail.message
+//            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Commit 1/\(detail.author.commits.count)", style: .plain, target: self, action: #selector(showAuthorCommits))
+        }
     }
     
 

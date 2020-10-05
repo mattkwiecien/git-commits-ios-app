@@ -2,7 +2,7 @@
 //  Commit+CoreDataProperties.swift
 //  GitCommit2
 //
-//  Created by Matt Kwiecien on 10/3/20.
+//  Created by Matt Kwiecien on 10/5/20.
 //
 //
 
@@ -11,7 +11,7 @@ import CoreData
 
 
 extension Commit {
-    
+
     @nonobjc public class func createFetchRequest() -> NSFetchRequest<Commit> {
         return NSFetchRequest<Commit>(entityName: "Commit")
     }
@@ -20,6 +20,7 @@ extension Commit {
     @NSManaged public var message: String
     @NSManaged public var sha: String
     @NSManaged public var url: String
+    @NSManaged public var author: Author
 
 }
 

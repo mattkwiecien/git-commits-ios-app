@@ -18,6 +18,8 @@
 		1502CC11252905CF0093EACE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1502CC10252905CF0093EACE /* SwiftyJSON */; };
 		1502CC15252916FA0093EACE /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC13252916FA0093EACE /* Commit+CoreDataClass.swift */; };
 		1502CC16252916FA0093EACE /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC14252916FA0093EACE /* Commit+CoreDataProperties.swift */; };
+		1502CC27252BCD510093EACE /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC25252BCD510093EACE /* Author+CoreDataClass.swift */; };
+		1502CC28252BCD510093EACE /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502CC26252BCD510093EACE /* Author+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		1502CC052528D8650093EACE /* GitCommit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitCommit.xcdatamodel; sourceTree = "<group>"; };
 		1502CC13252916FA0093EACE /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		1502CC14252916FA0093EACE /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1502CC25252BCD510093EACE /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1502CC26252BCD510093EACE /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		1502CBE72528CB890093EACE /* GitCommit2 */ = {
 			isa = PBXGroup;
 			children = (
+				1502CC25252BCD510093EACE /* Author+CoreDataClass.swift */,
+				1502CC26252BCD510093EACE /* Author+CoreDataProperties.swift */,
 				1502CC13252916FA0093EACE /* Commit+CoreDataClass.swift */,
 				1502CC14252916FA0093EACE /* Commit+CoreDataProperties.swift */,
 				1502CBE82528CB890093EACE /* AppDelegate.swift */,
@@ -159,8 +165,10 @@
 			files = (
 				1502CC15252916FA0093EACE /* Commit+CoreDataClass.swift in Sources */,
 				1502CBED2528CB890093EACE /* ViewController.swift in Sources */,
+				1502CC28252BCD510093EACE /* Author+CoreDataProperties.swift in Sources */,
 				1502CC16252916FA0093EACE /* Commit+CoreDataProperties.swift in Sources */,
 				1502CBE92528CB890093EACE /* AppDelegate.swift in Sources */,
+				1502CC27252BCD510093EACE /* Author+CoreDataClass.swift in Sources */,
 				1502CBEB2528CB890093EACE /* SceneDelegate.swift in Sources */,
 				1502CC022528D5E90093EACE /* DetailViewController.swift in Sources */,
 				1502CC062528D8650093EACE /* GitCommit.xcdatamodeld in Sources */,
